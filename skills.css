@@ -1,0 +1,55 @@
+.skills-list {
+    font-size: 400px;      
+    padding: 100px 1000px;
+    display: flex;
+    flex-wrap: nowrap;              /* ❌ keep everything in one row */
+    justify-content: space-evenly; 
+    align-items: center;
+    gap: 20px;                      /* spacing between boxes */
+    width: 100%;             
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    overflow-x: auto;               /* scroll horizontally if needed */
+}
+
+.skills-list li {
+    font-weight: 500;
+    font-size: 18px;                /* bigger text */
+    padding: 15px 30px;             /* bigger pill size */
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #eaeaea;
+    letter-spacing: 0.3px;
+    backdrop-filter: blur(6px);
+    transition: all 0.25s ease;
+    flex: 0 0 auto;                 /* prevent shrinking */
+    text-align: center;
+}
+
+.skills-list li:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 6px 18px rgba(77,166,255,0.4);
+    background: linear-gradient(135deg, #4da6ff, #0077ff);
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #4da6ff;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.content h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #4da6ff;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
